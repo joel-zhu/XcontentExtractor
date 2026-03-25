@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XcontentExtractor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <span class="logo-icon">📝</span>
+        <span class="logo-text">XcontentExtractor</span>
+      </div>
+    </div>
+
+    <!-- Status Area -->
+    <div id="status-area" class="status-area">
+      <!-- 状态 1: 不可导出 -->
+      <div id="status-unsupported" class="status-card hidden">
+        <div class="status-icon">❌</div>
+        <div class="status-message">当前页面不是可导出的 X 推文或线程</div>
+      </div>
+
+      <!-- 状态 2: 可导出 -->
+      <div id="status-ready" class="status-card hidden">
+        <div class="status-icon">✅</div>
+        <div class="status-info">
+          <div class="status-message">当前页面可以导出</div>
+          <div id="page-type" class="page-type"></div>
+        </div>
+      </div>
+
+      <!-- 状态 3: 处理中 -->
+      <div id="status-processing" class="status-card hidden">
+        <div class="status-icon spinner">⏳</div>
+        <div class="status-message" id="processing-message">正在处理…</div>
+      </div>
+
+      <!-- 状态 4: 完成 -->
+      <div id="status-done" class="status-card hidden">
+        <div class="status-icon">🎉</div>
+        <div class="status-info">
+          <div class="status-message">已成功下载</div>
+          <div id="download-filename" class="filename"></div>
+        </div>
+      </div>
+
+      <!-- 状态 5: 部分完成 -->
+      <div id="status-partial" class="status-card hidden">
+        <div class="status-icon">⚠️</div>
+        <div class="status-info">
+          <div class="status-message">已下载（部分内容可能不完整）</div>
+          <div id="partial-filename" class="filename"></div>
+        </div>
+      </div>
+
+      <!-- 状态 6: 错误 -->
+      <div id="status-error" class="status-card hidden">
+        <div class="status-icon">❗</div>
+        <div class="status-message" id="error-message">发生错误</div>
+      </div>
+
+      <!-- 加载中（初始状态） -->
+      <div id="status-loading" class="status-card">
+        <div class="status-icon spinner">⏳</div>
+        <div class="status-message">检测页面中…</div>
+      </div>
+    </div>
+
+    <!-- Export Button -->
+    <button id="export-btn" class="export-btn hidden" disabled>
+      <span class="btn-icon">⬇️</span>
+      <span class="btn-text">导出 Markdown</span>
+    </button>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span>v1.0.0</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
