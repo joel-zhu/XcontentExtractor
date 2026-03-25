@@ -65,12 +65,6 @@ XcontentExtractor/
 │       │                                 # DocumentModel、Author、Block 等结构
 │       └── markdownRenderer.js           # Markdown 渲染器
 │                                         # 将 DocumentModel 转为 .md 文本
-├── tests/                                # 导出的测试文件存放目录
-├── testURL.md                            # 测试用 URL 集合 (Tweet/Thread/Article)
-├── goal.md                               # 项目需求与目标文档
-├── learnedFromBugs.md                    # 踩坑经验与教训总结
-├── 250323-handoff.md                     # 视频功能交接文档
-└── 编程继承者.md                           # 交接文档模板
 ```
 
 ---

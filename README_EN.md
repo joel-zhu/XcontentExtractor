@@ -65,12 +65,6 @@ XcontentExtractor/
 │       │                                 # DocumentModel, Author, Block structures
 │       └── markdownRenderer.js           # Markdown Renderer
 │                                         # Converts DocumentModel to .md text
-├── tests/                                # Test export files directory
-├── testURL.md                            # Test URLs (Tweet/Thread/Article)
-├── goal.md                               # Project requirements & goals
-├── learnedFromBugs.md                    # Pitfalls & bug learnings
-├── 250323-handoff.md                     # Video feature handoff doc
-└── 编程继承者.md                           # Handoff doc template
 ```
 
 ---
