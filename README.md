@@ -1,5 +1,7 @@
 # XcontentExtractor
 
+[English](./README_EN.md) | [中文](./README.md)
+
 将 X (Twitter) 上的推文、Thread（连续推文串）和长文 (Article) 一键导出为格式优美的 Markdown 文件。
 
 ## ✨ 功能特性
@@ -200,15 +202,6 @@ data-testid > 语义化标签 > 结构位置 > CSS 类名
 
 ---
 
-## 📚 相关文档
-
-| 文件 | 说明 |
-|------|------|
-| `goal.md` | 项目的完整需求与开发目标 |
-| `learnedFromBugs.md` | 踩坑经验总结（长文提取、视频提取等） |
-| `250323-handoff.md` | 视频提取功能的交接文档 |
-| `testURL.md` | 用于测试的推文/Thread/长文 URL |
-| `编程继承者.md` | 交接文档模板 |
 
 ---
 
